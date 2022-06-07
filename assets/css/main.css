@@ -1,0 +1,420 @@
+
+:root {
+	--black: #000000;
+	--light: #eceff1;
+	--red: #c30000fc;
+    --blue: #075ac1ed;
+    --my-blue-theme: #098cf3c4;
+    --yellow:#ffc107 ;
+    --orange: #fd7e14;
+    --indigo: #6610f2;
+	--lightbluegray:#e7eff7c7;
+}
+html,
+body {
+	height: 100%;
+	position: relative;
+	font-family: 'Poppins', sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+}
+
+/*Reusable classes for colors*/
+.modal {
+	top: 30%!important;
+}
+.hover-2:hover {
+    background: #212529 !important;
+    color: #fff !important;
+}
+
+.this-element {
+    color: #0c63e4;
+    background-color: #e7f1ff;
+}
+
+.this-header {
+    color: #fff;
+    background: #347ee5;
+}
+
+.this-element:hover {
+    background-color: #0c63e4;
+    color: #fff;
+}
+.hover-1:hover {
+	background: #0A66C2!important;
+}
+.bg-greywhite {
+    background: #f7f7f7b8 !important;
+}
+.pointer {
+	cursor: pointer;
+}
+.lg-deep-purple {
+	background: linear-gradient(to right, rgb(103, 58, 183), rgb(81, 45, 168));
+}
+.lg-blue {
+    background: linear-gradient(to right, rgb(102, 125, 182),
+                rgb(0, 130, 200), rgb(0, 130, 200), rgb(102, 125, 182));
+  }
+  .lg-velvet-sun {
+    background: linear-gradient(to right, rgb(225, 238, 195), rgb(240, 80, 83));
+  }
+  .lg-purpink {
+    background: linear-gradient(to right, rgb(127, 0, 255), rgb(225, 0, 255));
+  }
+  .lg-subu {
+    background: linear-gradient(to left, rgb(12, 235, 235), rgb(32, 227, 178), rgb(41, 255, 198));
+  }
+  .lg-scooter {
+    background: linear-gradient(rgb(54, 209, 220), rgb(91, 134, 229));
+  }
+  .lg-red {
+    background: linear-gradient(rgb(248, 80, 50), rgb(231, 56, 39));
+  }
+  .txt-poppins {
+    font-family: 'Poppins', sans-serif;
+
+  }
+  .number-items div div:hover{
+    background:#098cf3c4!important;
+
+  }
+  .facebook{
+	background:#4267B2;
+}
+.facebook:hover{
+	background:#000000!important;
+}
+.whatsapp {
+	background:#128C7E;
+}
+.whatsapp:hover{
+	background:#075E54!important;
+}
+.linkedin {
+	background:#0A66C2;
+}
+.linkedin:hover{
+	background:#0b5e86!important;
+}
+.twitter {
+	background:#1DA1F2;
+}
+.twitter:hover{
+	background:#14171A!important;
+}
+.font-family {
+	font-family: monospace!important;
+}
+.box-shadow {
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.175)!important;
+}
+.light-blue-gray {
+	background-color: var(--lightbluegray)!important;
+}
+.blue-btn {
+	background-color: var(--my-blue-theme);
+	color: #fff;
+}
+.blue-btn:hover {
+	color: var(--my-blue-theme);
+	border: 1px solid var(--my-blue-theme);
+	background-color: #fff;
+}
+.theme-light {
+	background-color: var(--light)!important;
+}
+.dark-black {
+	background-color: #000000;
+}
+.red {
+	background-color: var(--red);
+}
+.blue {
+	background-color: var(--blue);
+}
+.blue-text {
+	color: var(--blue);
+}
+.red-text {
+	color: var(--red);
+}
+.black-text {
+	color: var(--black);
+}
+.yellow {
+	background-color: var(--yellow);
+}
+.my-blue-theme {
+	background-color: var(--my-blue-theme);
+}
+.btn-yellow {
+    color: #fff!important;
+    background-color: var(--yellow)!important;
+    border-color: var(--yellow)!important;
+}
+.btn-yellow:hover{
+	color: var(--yellow)!important;
+	background-color: transparent!important;
+	border: 1px solid var(--yellow)!important;;
+}
+/*-----------------------------------------------*/
+
+/* pop up Login form */
+.modal-content {
+	border:none!important;
+}
+.modal-header,
+.modal-footer {
+	display: flex;
+	flex-shrink: 0;
+	align-items: center;
+	border-bottom:none!important;
+    border-top-left-radius: calc(0.3rem - 1px);
+    border-top-right-radius: calc(0.3rem - 1px);
+}
+.modal-header {
+    justify-content: space-between;
+    padding: 1rem 1rem;
+}
+.modal-footer {
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    padding: 0.75rem;
+	border-top:none!important;
+	background-color: var(--light)!important;
+	border-radius: 0px!important;
+}
+
+.socialmedia a i:hover {
+	color: var(--orange);
+}
+.login a span:hover {
+	background-color: var(--light)!important;
+	color: var(--black)!important;
+}
+/*navigation*/
+.navbar-dark .navbar-nav .nav-link {
+    color: var(--black)!important;
+    font-weight: bold;
+}
+.navbar-dark .navbar-toggler {
+    color: var(--my-blue-theme)!important;
+    border-color: var(--my-blue-theme)!important;
+}
+.navbar-toggler {
+    padding: .25rem .75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: var(--my-blue-theme)!important;
+    border: 1px solid var(--my-blue-theme)!important;
+    border-radius: .25rem;
+    transition: box-shadow .15s ease-in-out;
+}
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: var(--my-blue-theme)!important;
+}
+nav.nav-scroll .navbar-brand img {
+	background-color: #fff!important;
+}
+nav.nav-scroll {
+    background-color:var(--my-blue-theme)!important;
+    transition: 2s;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    padding: 18px;
+}
+nav.nav-scroll div a {
+    color: #fff!important;
+}
+nav.nav-scroll .navbar-nav .nav-link {
+    color: #fff!important;
+}
+nav.nav-scroll .navbar-nav .nav-link:hover {
+    color: var(--black)!important;
+}
+nav.nav-scroll .navbar-dark .navbar-toggler {
+    color: var(--yellow)!important;
+    border-color: var(--yellow)!important;
+}
+nav.nav-scroll .navbar-toggler {
+    padding: .25rem .75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: var(--yellow)!important;
+    border: 1px solid var(--yellow)!important;
+    border-radius: .25rem;
+    transition: box-shadow .15s ease-in-out;
+}
+/*About us*/
+#about {
+	height: 48vh;
+	position: relative;
+}
+.this-about{
+	position: absolute;
+	top: 25%;
+	left: 0;
+	right: 0;
+}
+
+.container-box {
+	max-width: 840px;
+}
+
+/*shop*/
+#shop {
+	height: auto;
+}
+.this-shop {
+	padding-top: 10%;
+	padding-bottom: 5%;
+}
+.item-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    cursor: pointer;
+}
+.card-img-top {
+    border-top-left-radius: 0px!important;
+    border-top-right-radius: 0px!important;
+}
+.item-body {
+    flex: 1 1 auto;
+    padding: 1rem 1rem;
+}
+.item-title {
+    margin-bottom: .5rem;
+}
+.img-card:hover {
+	border: 1px solid var(--my-blue-theme);
+	cursor: pointer;
+}
+
+/*Services*/
+#services {
+	height: 55vh;
+	position: relative;
+	background:  url('../images/about/3.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.this-services {
+	position: absolute;
+	top: 14%;
+	left: 0;
+	right: 0;
+}
+.services-item {
+	padding-top: 4%;
+}
+
+/*Workshop*/
+#workshop {
+	height: 78vh;
+	position: relative;
+}
+.this-workshop {
+	position: absolute;
+	top: 10%;
+	left: 0;
+	right: 0;
+}
+
+/*contact*/
+#contact {
+	height: 100vh;
+	position: relative;
+}
+.this-contact {
+	position: absolute;
+	top: 10%;
+	left: 0;
+	right: 0;
+}
+
+/*Testimonials*/
+#testimonial {
+	height: 75vh;
+	position: relative;
+}
+.this-testimonial {
+	position: absolute;
+	top: 15%;
+	left: 0;
+	right: 0;
+}
+
+/*Brands*/
+#brands {
+	height: 65vh;
+	position: relative;
+}
+.this-brands {
+	position: absolute;
+	top: 18%;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.item-A:hover{
+	background: linear-gradient(to left, rgb(12, 235, 235), rgb(32, 227, 178), rgb(41, 255, 198))!important;
+}
+.item-B:hover {
+	background: linear-gradient(to right, rgb(102, 125, 182),
+                rgb(0, 130, 200), rgb(0, 130, 200), rgb(102, 125, 182))!important;
+}
+
+
+/*responsiveness*/
+@media only screen and (max-width: 768px){
+
+	#brands {
+	    height: 85vh;
+	    position: relative;
+    }
+	.this-brands {
+		top: 20%!important;
+	}
+	#workshop {
+		height: 80vh;
+	}
+	.this-workshop {
+		top: 10%;
+	}
+}
+
+@media only screen and (max-width: 576px){
+
+	#about {
+		height: 43vh;
+	}
+	.this-shop {
+		padding-top: 15%!important;
+		padding-bottom: 15%!important;
+	}
+	#services {
+		height: 85vh;
+	}
+	.this-services {
+		top: 25%;
+	}
+	#workshop {
+		height: 80vh;
+	}
+	.this-workshop {
+		top: 17%;
+	}
+	
+}
